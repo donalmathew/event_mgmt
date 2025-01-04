@@ -1,4 +1,5 @@
 from clear_sceen import clear_screen
+import signup
 
 def main():
     clear_screen()
@@ -29,6 +30,17 @@ def login():
         print()
         print("1: log into organisation")
         print("2: Login as user")
+        
+        x=input()
+        if x==1:
+            
+            clear_screen()
+        elif x==2:
+            
+            clear_screen()
+        else:
+            flag=False
+            clear_screen()
 
 
 def signup():
@@ -40,5 +52,20 @@ def signup():
         print("1: create head organisation")
         print("2: create a sub organisation")
         print("3: signup as user")
+
+        x=input()
+        if x==1:
+            signup.create_head()
+            clear_screen()
+        elif x==2:
+            
+            clear_screen()
+        elif x==3:
+
+            clear_screen()
+        else:
+            flag=False
+            clear_screen()
+
 
 main()
